@@ -21,11 +21,10 @@ function App() {
   const newLocal = "#E5F2EE";
   return (
     <div className="App">
-      <h1 style={{ margin: "1em" }}>
-        Social
-        <small className="text-muted">Feed</small>
-      </h1>
 
+      <div>
+        <NavBar />
+      </div>
       <script>{(document.body.style.backgroundColor = newLocal)};</script>
 
         <div className="card-body">
