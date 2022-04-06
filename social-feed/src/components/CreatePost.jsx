@@ -21,11 +21,11 @@ const CreatePost = ({addNewPosting}) => {
         <form onSubmit={handleSubmit} className='border-box'>
             <div class="CreatePostCenter">
                 <div class="card-body">
-                <h3>Name</h3>
+                    <h3>Name</h3>
                     <input type='name' className="card-text" value={name} onChange={(event) => setName(event.target.value)} />
                 </div>
                 <div class="card-body">
-                <h3>Post</h3>
+                    <h3>Post</h3>
                     <input type='post' className="card-text" value={post} onChange={(event) => setPost(event.target.value)} />
                 </div>
                 <button type='submit' class="btn btn-primary" style={{'margin-top': '1em'}}>Create</button>

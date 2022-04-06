@@ -1,6 +1,6 @@
-.PostCenter {
+.DisplayPosts {
     display: grid;
-    column-gap: 50px;
+    column-gap: 10px;
     grid-template-columns: auto auto auto;
     background-color: #E5F2EE;
     padding: 10px;
@@ -31,7 +31,7 @@ grid-template-areas:
     'menu footer footer footer footer footer';
 gap: 50px;
 background-color: #E5F2EE;
-padding: 30px;
+padding: 20px;
 }
 
 
