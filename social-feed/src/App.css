@@ -1,7 +1,14 @@
 
-html {
+.page {
     background-color: #E5F2EE;
   }
 ul {
   list-style-type:none;
+}
+
+div header {
+  background-color: white;
+  box-shadow: 3px 3px 7px darkgrey;
+  border-style: none;
+  padding: 1rem;
 }

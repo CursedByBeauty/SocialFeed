@@ -32,10 +32,10 @@ const CreatePost = (props) => {
           className="form-control"
           value={post}
           onChange={(event) => setPost(event.target.value)}
-        />
-      </div>
-      <div>
-        <button type="submit">Create</button>
+        />{" "}
+        <div>
+          <button className='post'type="submit">Create</button>
+        </div>
       </div>
     </form>
   );

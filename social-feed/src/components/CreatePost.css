@@ -1,0 +1,16 @@
+.border-box {
+    background-color: white;
+    margin: 2rem;
+    box-shadow: 2px 2px 6px;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.post {
+    margin-top: 1rem;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    background-color: #1867ab;
+    width: 7rem;
+}

@@ -23,14 +23,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <nav className="NavBarItems">
-        <h1>
-          Social<small className="text-muted">Feed</small>
-        </h1>
-      </nav>
-
-      <div className="card-body">
+    <div className="page">
+      <div>
+        <header>
+          <h1>
+            Social<small className="text-muted">Feed</small>
+          </h1>
+        </header>
+      </div>
+      <div>
         <CreatePost addNewPosting={addCreatePost} />
       </div>
 
