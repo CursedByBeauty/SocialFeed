@@ -1,37 +1,26 @@
-import React, {useState} from 'react';
-import CreatePost from './CreatePost';
-import ReactDOM from 'react-dom';
-import './DisplayPosts'
-
-const DisplayPosts = ({parentPosting}) => {
-    
-    
+import React from 'react';
+import './DisplayPosts.css'
+import Buttons from "./Buttons"
+const DisplayPosts = (props) => {
     return ( 
-        
-
         <div>
-            {parentPosting.map((posting) => {
-                return (
-            
-                <div className='DisplayPosts'>
-                    <div className="grid-container">
-                        <div className="grid-col">
-                            <h3 className="card-title">{posting.name}</h3>
-                            <p className="card-text">{posting.post}</p>
-                            <button className="button-4" role="button">Like</button>
-                            <br></br>
-                            <button className="button-4" role="button">Dislike</button>
+            {props.parentPosting.map((post,index)=>{
+                return(
+                    <ul>
+                        <div>
+                            <li>{post.date}</li>
+                            <li>
+                                <h3>{post.name}</h3>
+                            </li>
+                            <li>{post.post}</li>
+                            <Buttons/>
                         </div>
-                    </div>
-                </div>
-            
-                );
+                    </ul>
+                )
             })}
         </div>
-        
 
-
- );
+    )
 }
  
 export default DisplayPosts;
